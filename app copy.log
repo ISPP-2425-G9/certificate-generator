@@ -1,0 +1,43 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.15:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (inotify)
+ * Debugger is active!
+ * Debugger PIN: 572-050-830
+10.0.2.2 - - [18/Dec/2024 18:13:36] "GET / HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:36] "GET /static/css/app.css HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:36] "GET /static/css/dropzone.css HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:36] "GET /static/img/mascotas.png HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:36] "GET /static/img/logo.png HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:36] "GET /static/css/own.css HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:36] "GET /static/img/click.png HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:36] "GET /static/img/image.png HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:36] "GET /static/img/cartel2.png HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:36] "GET /static/js/app.js HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:36] "GET /public/js/scripts.js HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:36] "GET /static/img/FondoInnosoft1.png HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:37] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:37] "[32mGET /logout HTTP/1.1[0m" 302 -
+10.0.2.2 - - [18/Dec/2024 18:13:37] "GET / HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:37] "[36mGET /static/css/app.css HTTP/1.1[0m" 304 -
+10.0.2.2 - - [18/Dec/2024 18:13:37] "[36mGET /static/css/dropzone.css HTTP/1.1[0m" 304 -
+10.0.2.2 - - [18/Dec/2024 18:13:37] "[36mGET /static/css/own.css HTTP/1.1[0m" 304 -
+10.0.2.2 - - [18/Dec/2024 18:13:37] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+10.0.2.2 - - [18/Dec/2024 18:13:37] "[36mGET /static/img/mascotas.png HTTP/1.1[0m" 304 -
+10.0.2.2 - - [18/Dec/2024 18:13:37] "[36mGET /static/img/click.png HTTP/1.1[0m" 304 -
+10.0.2.2 - - [18/Dec/2024 18:13:37] "[36mGET /static/img/image.png HTTP/1.1[0m" 304 -
+10.0.2.2 - - [18/Dec/2024 18:13:37] "[36mGET /static/img/cartel2.png HTTP/1.1[0m" 304 -
+10.0.2.2 - - [18/Dec/2024 18:13:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+10.0.2.2 - - [18/Dec/2024 18:13:37] "GET /public/js/scripts.js HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:39] "GET /login HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:39] "[36mGET /static/css/app.css HTTP/1.1[0m" 304 -
+10.0.2.2 - - [18/Dec/2024 18:13:39] "[36mGET /static/css/dropzone.css HTTP/1.1[0m" 304 -
+10.0.2.2 - - [18/Dec/2024 18:13:39] "[36mGET /static/css/own.css HTTP/1.1[0m" 304 -
+10.0.2.2 - - [18/Dec/2024 18:13:39] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+10.0.2.2 - - [18/Dec/2024 18:13:39] "[36mGET /static/img/logo.png HTTP/1.1[0m" 304 -
+10.0.2.2 - - [18/Dec/2024 18:13:40] "GET /auth/js/scripts.js HTTP/1.1" 200 -
+10.0.2.2 - - [18/Dec/2024 18:13:40] "[36mGET /static/img/FondoInnosoft1.png HTTP/1.1[0m" 304 -
