@@ -97,8 +97,6 @@
                         <th>Name</th>
                         <th>Surname</th>
                         <th>Email</th>
-                        <th>UVUS</th>
-                        <th>Participation</th>
                         <th>View</th>
                         <th>SENT?</th>
                         <th>Select Diploma</th>
@@ -112,8 +110,6 @@
                         <td>{{ diploma.nombre }}</td>
                         <td>{{ diploma.apellidos }}</td>
                         <td>{{ diploma.correo }}</td>
-                        <td>{{ diploma.uvus }}</td>
-                        <td>{{ diploma.participacion }}</td>
                         <td>
                             <a href="{{ url_for('diplomas.view_diploma', diploma_id=diploma.id) }}" target="_blank" class="btn btn-info btn-sm">
                             View 

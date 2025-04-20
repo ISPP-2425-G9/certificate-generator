@@ -31,10 +31,7 @@ class DiplomasService(BaseService):
 
         # Verifica que las columnas coincidan
         expected_columns = [
-            "Apellidos", "Nombre", "Uvus", "Correo", "Perfil", "Participación", "Comité",
-            "Evidencia aleatoria", "Horas de evidencia aleatoria", "Eventos asistidos",
-            "Horas de asistencia", "Reuniones asistidas", "Horas de reuniones", "Bono de horas",
-            "Evidencias registradas", "Horas de evidencias", "Horas en total"
+            "Apellidos", "Nombre", "Correo"
         ]
 
         if list(df.columns) != expected_columns:
@@ -42,23 +39,9 @@ class DiplomasService(BaseService):
             raise ValidationError("Excel columns do not match the expected structure.")
 
         # Verificar unicidad de 'uvus', 'correo' y 'perfil'
-        unique_uvus = set()
-        unique_correos = set()
-        unique_perfiles = set()
         records = []
 
         for index, row in df.iterrows():
-            # Validar UVUS, Correo y Perfil
-            if row["Uvus"] in unique_uvus:
-                raise ValidationError(f"Duplicated UVUS found in row {index + 1}.")
-            if row["Correo"] in unique_correos:
-                raise ValidationError(f"Duplicated email found in row {index + 1}.")
-            if row["Perfil"] in unique_perfiles:
-                raise ValidationError(f"Duplicated profile found in row {index + 1}.")
-
-            unique_uvus.add(row["Uvus"])
-            unique_correos.add(row["Correo"])
-            unique_perfiles.add(row["Perfil"])
 
             # Crear instancia de Diploma desde la fila actual
             try:
@@ -179,11 +162,6 @@ class DiplomasService(BaseService):
         atributos = {
             "nombre": diploma.nombre,
             "apellidos": diploma.apellidos,
-            "uvus": diploma.uvus,
-            "correo": diploma.correo,
-            "perfil": diploma.perfil,
-            "participacion": diploma.participacion,
-            "comite": diploma.comite
         }
 
         # Reemplazar cada marcador en el texto personalizado
