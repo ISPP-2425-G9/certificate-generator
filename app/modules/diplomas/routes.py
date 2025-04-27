@@ -104,9 +104,9 @@ def send_diplomas():
         if file_path and os.path.exists(file_path):
             try:
                 mail_service.send_email_with_attachment(
-                    subject="Your Diploma from CARONTE",
+                    subject="Certificado por ser usuario piloto de Caronte",
                     recipients=[diploma.correo],
-                    body="Congratulations! 🎉🏆 Here is your diploma for participating as a Pilot User for Caronte.",
+                    body="Enhorabuena! 🎉🏆 Aquí tienes tu certificado por habernos ayudado con tu feedback ha construir Caronte.",
                     attachment_path_pdf=file_path
                 )
                 diploma.sent = True
