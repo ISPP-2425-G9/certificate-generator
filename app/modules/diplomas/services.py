@@ -115,7 +115,7 @@ class DiplomasService(BaseService):
 
         # calculamos la posición inicial para centrar el texto verticalmente
         altura_total_texto = len(lineas) * 40
-        coordenada_y = (alto / 2.25) + (altura_total_texto / 2)
+        coordenada_y = (alto / 2.08) + (altura_total_texto / 2)
 
         # dibujamos cada línea centrada
         for linea in lineas:

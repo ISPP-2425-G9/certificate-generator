@@ -106,7 +106,7 @@ def send_diplomas():
                 mail_service.send_email_with_attachment(
                     subject="Certificado por ser usuario piloto de Caronte",
                     recipients=[diploma.correo],
-                    body="Enhorabuena! 🎉🏆 Aquí tienes tu certificado por habernos ayudado con tu feedback ha construir Caronte.",
+                    body="Enhorabuena! 🎉🏆 Aquí tienes tu certificado por habernos ayudado con tu feedback a construir Caronte.",
                     attachment_path_pdf=file_path
                 )
                 diploma.sent = True
